@@ -4,13 +4,13 @@ namespace Projection {
     struct Plane {
         double a, b, c, d;
         
-        Plane(double a = 0, double b = 0, double c = 0, double d = 0) : a(a), b(b), c(c), d(d) {}
+        Plane(double a = 0.0, double b = 0.0, double c = 0.0, double d = 0.0) : a(a), b(b), c(c), d(d) {}
     };
 
     struct Vector {
         double x, y, z;
 
-        Vector(double x = 0, double y = 0, double z = 0) : x(x), y(y), z(z) {}
+        Vector(double x = 0.0, double y = 0.0, double z = 0.0) : x(x), y(y), z(z) {}
 
         Vector operator-(const Vector& v) const {
             return Vector(x - v.x, y - v.y, z - v.z);
